@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "notebooklm-personal",
+  "version": "0.1.0",
+  "description": "Personal NotebookLM MCP connection: notebooks, sources, questions, studio and research.",
+  "author": {"name": "aabiat"},
+  "repository": "https://github.com/aabiat/notebooklm-py"
+}

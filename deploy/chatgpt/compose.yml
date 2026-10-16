@@ -1,0 +1,8 @@
+# Layer after the two upstream Compose files. No application code is replaced.
+services:
+  notebooklm-mcp:
+    environment:
+      FASTMCP_STATELESS_HTTP: "true"
+      NOTEBOOKLM_MCP_UPLOAD_WIDGET: "0"
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
