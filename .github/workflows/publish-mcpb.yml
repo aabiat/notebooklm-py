@@ -28,12 +28,8 @@
 name: Attach release bundles (.mcpb, skill zip)
 
 on:
-  release:
-    types: [published]
+  workflow_dispatch:
 
-# Serialize per-tag so a rare double-publish can't race two uploads onto the
-# same asset (mirrors publish.yml / publish-docker.yml). Never cancel a run
-# mid-upload.
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false

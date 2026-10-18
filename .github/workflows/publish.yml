@@ -7,9 +7,6 @@ on:
         description: "Existing release tag to publish after a workflow-only recovery."
         required: true
         type: string
-  push:
-    tags:
-      - "v*"
 
 concurrency:
   group: ${{ github.workflow }}-${{ inputs.release_tag || github.ref }}

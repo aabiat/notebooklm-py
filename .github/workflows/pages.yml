@@ -1,11 +1,6 @@
 name: Deploy architecture diagrams
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/pages.yml"
-      - "docs/diagrams/*.html"
   workflow_dispatch:
 
 permissions:
