@@ -1,9 +1,6 @@
 name: RPC Health Check
 
 on:
-  schedule:
-    # Main branch: 7 AM UTC daily (1 hour after main nightly E2E tests)
-    - cron: '0 7 * * *'
   workflow_dispatch:
     inputs:
       qualification_pr:
